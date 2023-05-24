@@ -62,6 +62,7 @@
 
 .addButton{
    flex: 1;
+   position: relative;
    margin-top: 20px;
    margin-left: -5px;
    margin-right: 15px;
@@ -129,7 +130,6 @@
    width: 48px;
    line-height: 45px;
    border-radius: 6px;
-   justify-content: center;
    background-color: rgb(232, 232, 232);
    padding: 0;
    margin-left: 10px;
@@ -144,6 +144,7 @@
 .button{
    width: 170px;
    height: 52px;
+   position: relative;
    border-radius: 6px;
    border-right: 0px;
    border-top: 0px;
@@ -172,6 +173,7 @@
    width: 48px;
    line-height: 45px;
    border-radius: 25px;
+   position: relative;
    justify-content: center;
    border-right: 0px;
    border-top: 0px;
@@ -189,6 +191,7 @@
 .minusButton{
    width: 48px;
    line-height: 45px;
+   position: relative;
    border-radius: 25px;
    justify-content: center;
    border-right: 0px;
@@ -208,9 +211,20 @@
    opacity: 0.6;
 }
 
+.minusButton:hover .tooltipSection,
+.plusButton:hover .tooltipSection,
+.cancelButton:hover .tooltipSection,
+.addButton:hover .tooltipSection,
+.button:hover .tooltipSection{
+  opacity: 1;
+  transform: translate(0, 0.15em);
+  transition: all .25s ease-in-out;
+}
+
 .cancelButton{
    width: 50px;
    height: 50px;
+   position: relative;
    border-radius: 6px;
    justify-content: center;
    margin-left: 5px;
@@ -346,6 +360,44 @@
    border: 2px solid rgb(175, 1, 218);
    visibility: hidden;
 }
+
+.tooltipSection {
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   border-radius: 8px;
+   bottom: -60px;
+   right: -80px;
+   position: absolute;
+   white-space: nowrap;
+    background-color: rgb(175, 1, 218);
+   z-index: 100;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 1s;
+ }
+
+ .tooltipSection.one{
+   bottom: -40px;
+   right: 15px;
+ }
+
+ .tooltipSection.two{
+   bottom: -30px;
+   right: -2px;
+ }
+
+ .tooltipSection.three{
+   bottom: -40px;
+   right: -37px;
+ }
+ 
+ label[data-tooltip] {
+   color: white;
+   font-weight: 500;
+   font-size: 20px;
+ }
 
 @media print {
    .beige {

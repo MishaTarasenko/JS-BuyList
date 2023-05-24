@@ -12,6 +12,12 @@
             <input type="text" name="productName" class="productInput" placeholder="Назва товару" readonly> 
             <button type="button" class="addButton">
                <article class="addLabel">Додати</article>
+               <section class="tooltipSection one">
+                  <label data-tooltip="tooltip" 
+                    for="tooltip">
+                    Додати
+                  </label>
+               </section>
             </button>
          </section>
          <section class="products">
@@ -23,7 +29,15 @@
                   <section class="blockOfAmount">2</section>
                </section>
                <section class="buttonBlockTwo">
-                  <button type="button" class="button one">Не куплено</button>
+                  <button type="button" class="button one">
+                     Не куплено
+                     <section class="tooltipSection two">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Не куплено
+                        </label>
+                     </section>
+                  </button>
                </section>
             </section>
             <section class="product">
@@ -31,13 +45,45 @@
                   <p class="label">Печиво</p>
                </section>
                <section class="buttonBlockOne">
-                  <button type="button" class="minusButton">–</button>
+                  <button type="button" class="minusButton">
+                     –
+                     <section class="tooltipSection">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Зменшити кількість
+                        </label>
+                     </section>
+                  </button>
                   <section class="blockOfAmount">2</section>
-                  <button type="button" class="plusButton">+</button>
+                  <button type="button" class="plusButton">
+                     +
+                     <section class="tooltipSection">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                           Збільшити кількість
+                        </label>
+                     </section>
+                  </button>
                </section>
                <section class="buttonBlockTwo">
-                  <button type="button" class="button">Куплено</button>
-                  <button type="button" class="cancelButton">&#10006;</button>
+                  <button type="button" class="button">
+                     Куплено
+                     <section class="tooltipSection two">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Куплено
+                        </label>
+                     </section>
+                  </button>
+                  <button type="button" class="cancelButton">
+                     &#10006;
+                     <section class="tooltipSection three">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Відмінити
+                        </label>
+                     </section>
+                  </button>
                </section>
             </section>
             <section class="product three">
@@ -45,13 +91,45 @@
                   <input type="text" name="productName" class="productInput new" value="Сир" readonly> 
                </section>
                <section class="buttonBlockOne">
-                  <button type="button" class="minusButton three">–</button>
+                  <button type="button" class="minusButton three">
+                     –
+                     <section class="tooltipSection">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Зменшити кількість
+                        </label>
+                     </section>
+                  </button>
                   <section class="blockOfAmount">1</section>
-                  <button type="button" class="plusButton">+</button>
+                  <button type="button" class="plusButton">
+                     +
+                     <section class="tooltipSection">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Збільшити кількість
+                        </label>
+                     </section>
+                  </button>
                </section>
                <section class="buttonBlockTwo">
-                  <button type="button" class="button">Куплено</button>
-                  <button type="button" class="cancelButton">&#10006;</button>
+                  <button type="button" class="button">
+                     Куплено
+                     <section class="tooltipSection two">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Куплено
+                        </label>
+                     </section>
+                  </button>
+                  <button type="button" class="cancelButton">
+                     &#10006;
+                     <section class="tooltipSection three">
+                        <label data-tooltip="tooltip" 
+                          for="tooltip">
+                          Відмінити
+                        </label>
+                     </section>
+                  </button>
                </section>
             </section>
          </section>
